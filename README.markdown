@@ -6,7 +6,7 @@ This is based on the [vim-commentary](https://github.com/tpope/vim-pathogen)
 plugin from Tim Pope.
 
 This one is more advanced and toggles comments if they do not have a trailing space.
-as no one was interested in this functionality (issues [#3], [#32], [#33] and [#40])
+as no one was interested in this functionality (issues [#3][3], [#32][32], [#33][33] and [#40][40])
 
 ## Description
 
@@ -49,7 +49,7 @@ Like commentary.vim? Follow the repository on
 
 See `:help license`.
 
-[#3](https://github.com/tpope/vim-commentary/issues/3)
-[#30](https://github.com/tpope/vim-commentary/issues/30)
-[#33](https://github.com/tpope/vim-commentary/issues/33)
-[#40](https://github.com/tpope/vim-commentary/issues/40)
+[3](https://github.com/tpope/vim-commentary/issues/3)
+[30](https://github.com/tpope/vim-commentary/issues/30)
+[33](https://github.com/tpope/vim-commentary/issues/33)
+[40](https://github.com/tpope/vim-commentary/issues/40)
