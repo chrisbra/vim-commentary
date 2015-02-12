@@ -19,13 +19,14 @@ function! commentary#go(type,...) abort "{{{2
   let [l_, r_] = s:surroundings()
   let llist    = []
   for lnum in range(lnum1,lnum2)
+    let l    = getline(lnum)
     let uncomment = 2
-    let line = matchstr(getline(lnum),'\S.*\s\@<!')
+    let line = matchstr(l,'\S.*\s\@<!')
     let [l, r] = s:StripWhiteSpace(l_,r_,line)
     if line != '' && (stridx(line,l) || line[strlen(line)-strlen(r) : -1] != r)
       let uncomment = 0
     endif
-    let line = getline(lnum)
+    let line = l
     if strlen(r) > 2 && l.r !~# '\\'
       let line = substitute(line,
           \'\M'.r[0:-2].'\zs\d\*\ze'.r[-1:-1].'\|'.l[0].'\zs\d\*\ze'.l[1:-1],
