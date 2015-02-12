@@ -26,7 +26,4 @@ gcu                     (empty lines adjacent commented lines will be included).
                                                 *:Commentary*
 :[range]Commentary      Comment or uncomment [range] lines
 
-The |User| CommentaryPost autocommand fires after a successful operation and
-can be used for advanced customization.
-
  vim:tw=78:et:ft=help:norl:

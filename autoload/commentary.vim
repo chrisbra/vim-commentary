@@ -36,13 +36,6 @@ function! commentary#go(type,...) abort "{{{2
     call add(llist, line)
   endfor
   call setline(lnum1,llist)
-  let modelines = &modelines
-  try
-    set modelines=0
-    silent doautocmd User CommentaryPost
-  finally
-    let &modelines = modelines
-  endtry
 endfunction
 
 function! commentary#textobject(inner) abort "{{{2
