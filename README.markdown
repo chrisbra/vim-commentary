@@ -1,5 +1,15 @@
 # commentary.vim
 
+## initial Version
+
+This is based on the [vim-commentary](https://github.com/tpope/vim-pathogen)
+plugin from Tim Pope.
+
+This one is more advanced and toggles comments if they do not have a trailing space.
+as no one was interested in this functionality (issues [#3], [#32], [#33] and [#40])
+
+## Description
+
 Comment stuff out.  Use `gcc` to comment out a line (takes a count),
 `gc` to comment out the target of a motion (for example, `gcap` to
 comment out a paragraph), `gc` in visual mode to comment out the selection,
@@ -38,3 +48,8 @@ Like commentary.vim? Follow the repository on
 ## License
 
 See `:help license`.
+
+[#3](https://github.com/tpope/vim-commentary/issues/3)
+[#30](https://github.com/tpope/vim-commentary/issues/30)
+[#33](https://github.com/tpope/vim-commentary/issues/33)
+[#40](https://github.com/tpope/vim-commentary/issues/40)
