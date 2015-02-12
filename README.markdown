@@ -50,6 +50,6 @@ Like commentary.vim? Follow the repository on
 See `:help license`.
 
   [3]: https://github.com/tpope/vim-commentary/issues/3
- [30]: https://github.com/tpope/vim-commentary/issues/30
+ [32]: https://github.com/tpope/vim-commentary/issues/32
  [33]: https://github.com/tpope/vim-commentary/issues/33
  [40]: https://github.com/tpope/vim-commentary/issues/40
