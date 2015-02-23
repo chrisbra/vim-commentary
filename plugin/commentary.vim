@@ -6,7 +6,6 @@ if exists("g:loaded_commentary_cb") || &cp || v:version < 704
 endif
 let g:loaded_commentary_cb = 1
 
-
 xnoremap <silent> <Plug>Commentary        :<C-U>call commentary#go(line("'<"),line("'>"))<CR>
 nnoremap <silent> <Plug>Commentary        :<C-U>set opfunc=commentary#go<CR>g@
 nnoremap <silent> <Plug>CommentaryLine    :<C-U>set opfunc=commentary#go<Bar>exe 'norm! 'v:count1.'g@_'<CR>
