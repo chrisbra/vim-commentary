@@ -1,6 +1,10 @@
 function! s:surroundings() abort "{{{2
-  return split(get(b:, 'commentary_format', substitute(&cms,
+  if empty(&cms)
+      return ['# ', '']
+  else
+    return split(get(b:, 'commentary_format', substitute(&cms,
         \ '\S\@<=\%(\s*\)\%(%s\)\@=\|\%(%s\)\@<=\(\s*\)\S\@=',' ','g')), '%s', 1)
+  endif
 endfunction
 
 function! s:StripWhiteSpace(l,r,line) "{{{2
@@ -26,7 +30,6 @@ function! commentary#go(type,...) abort "{{{2
     if line != '' && (stridx(line,l) || line[strlen(line)-strlen(r) : -1] != r)
       let uncomment = 0
     endif
-    let line = l
     if strlen(r) > 2 && l.r !~# '\\'
       let line = substitute(line,
           \'\M'.r[0:-2].'\zs\d\*\ze'.r[-1:-1].'\|'.l[0].'\zs\d\*\ze'.l[1:-1],
